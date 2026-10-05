@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA03023",
+  "title": "Bloodborne: The Old Hunters Edition",
+  "last_reviewed": "2026-10-05",
+  "claims": [
+    {
+      "scope": "vertex_integrity",
+      "mode": "relaxed",
+      "finding": "sufficient",
+      "confidence": "medium",
+      "shadps4_version": "0.19.0",
+      "game_version": null,
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "works",
+        "precise": "not_reported"
+      },
+      "co_requirements": [],
+      "summary": "The 0.19.0 report says the remaining vertex explosions are fixed with Relaxed readbacks.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/211#issuecomment-5962088195",
+          "note": "The report phrases the underlying issue as likely still present, so this is kept as sufficient/medium rather than promoted to a required claim."
+        }
+      ]
+    }
+  ]
+}
