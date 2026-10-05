@@ -96,7 +96,8 @@
                   "works",
                   "improves",
                   "no_change",
-                  "not_tested"
+                  "not_tested",
+                  "not_reported"
                 ]
               },
               "relaxed": {
@@ -107,7 +108,8 @@
                   "works",
                   "improves",
                   "no_change",
-                  "not_tested"
+                  "not_tested",
+                  "not_reported"
                 ]
               },
               "precise": {
@@ -118,7 +120,8 @@
                   "works",
                   "improves",
                   "no_change",
-                  "not_tested"
+                  "not_tested",
+                  "not_reported"
                 ]
               }
             },
