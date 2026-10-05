@@ -14,7 +14,7 @@
       "comparison": {
         "disabled": "fails",
         "relaxed": "works",
-        "precise": "not_tested"
+        "precise": "not_reported"
       },
       "co_requirements": [],
       "summary": "On 0.17.0 Disabled reaches the title screen and locks up, while Relaxed reaches gameplay with lighting issues.",
