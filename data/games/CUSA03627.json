@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA03627",
+  "title": "The Last Guardian",
+  "last_reviewed": "2026-10-05",
+  "claims": [
+    {
+      "scope": "spear_rendering",
+      "mode": "precise",
+      "finding": "required",
+      "confidence": "high",
+      "shadps4_version": "0.16.0",
+      "game_version": null,
+      "comparison": {
+        "disabled": "fails",
+        "relaxed": "fails",
+        "precise": "works"
+      },
+      "co_requirements": [],
+      "summary": "On 0.16.0 Precise is required for the opening spear to render; Relaxed does not render it.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/196#issuecomment-5084153583",
+          "note": "The reporter explicitly states that Precise is still required and Relaxed will not render the spear."
+        }
+      ]
+    },
+    {
+      "scope": "general_graphics",
+      "mode": "precise",
+      "finding": "sufficient",
+      "confidence": "high",
+      "shadps4_version": "0.17.0",
+      "game_version": null,
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "not_reported",
+        "precise": "works"
+      },
+      "co_requirements": [],
+      "summary": "On 0.17.0 Precise is reported to fix the observed graphical glitches, at a large performance cost.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/196#issuecomment-5194681050",
+          "note": "The 0.17.0 report says Precise fixes every observed graphical glitch but reduces performance to roughly 10-15 FPS."
+        }
+      ]
+    }
+  ]
+}
