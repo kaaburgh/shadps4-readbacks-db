@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA00663",
+  "title": "Assassin's Creed Unity",
+  "last_reviewed": "2026-10-05",
+  "claims": [
+    {
+      "scope": "title_screen_rendering",
+      "mode": "relaxed",
+      "finding": "sufficient",
+      "confidence": "high",
+      "shadps4_version": null,
+      "game_version": null,
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "works",
+        "precise": "not_reported"
+      },
+      "co_requirements": [],
+      "summary": "Relaxed is sufficient to fix the title-screen rendering in the cited report.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/4#issuecomment-4165222223",
+          "note": "The report says the new Relaxed readbacks mode is enough to fix the title screen; the comment does not pin the emulator version."
+        }
+      ]
+    }
+  ]
+}
