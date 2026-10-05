@@ -14,7 +14,7 @@
       "comparison": {
         "disabled": "incorrect",
         "relaxed": "works",
-        "precise": "not_tested"
+        "precise": "not_reported"
       },
       "co_requirements": [],
       "summary": "Relaxed fixes the reported vertex explosions with little performance cost.",
