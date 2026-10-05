@@ -12,8 +12,8 @@
       "shadps4_version": null,
       "game_version": null,
       "comparison": {
-        "disabled": "not_tested",
-        "relaxed": "not_tested",
+        "disabled": "not_reported",
+        "relaxed": "not_reported",
         "precise": "works"
       },
       "co_requirements": [
