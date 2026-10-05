@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA01073",
+  "title": "Ratchet & Clank",
+  "last_reviewed": "2026-10-05",
+  "claims": [
+    {
+      "scope": "correct_graphics",
+      "mode": "precise",
+      "finding": "required",
+      "confidence": "medium",
+      "shadps4_version": null,
+      "game_version": null,
+      "comparison": {
+        "disabled": "not_tested",
+        "relaxed": "not_tested",
+        "precise": "works"
+      },
+      "co_requirements": [
+        "readback_linear_images"
+      ],
+      "summary": "A recent report states that Precise plus Readback Linear Images is needed for correct graphics; the report does not pin the emulator version.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/17#issuecomment-5959490471",
+          "note": "The source explicitly says the game needs Precise readbacks and Readback Linear Images for correct graphics, but does not document lower-mode runs in that comment."
+        }
+      ]
+    }
+  ]
+}
