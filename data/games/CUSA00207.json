@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA00207",
+  "title": "Bloodborne",
+  "last_reviewed": "2026-10-05",
+  "claims": [
+    {
+      "scope": "vertex_integrity",
+      "mode": "relaxed",
+      "finding": "required",
+      "confidence": "high",
+      "shadps4_version": null,
+      "game_version": null,
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "works",
+        "precise": "not_tested"
+      },
+      "co_requirements": [],
+      "summary": "Relaxed fixes the reported vertex explosions with little performance cost.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/1979#issuecomment-5438666917",
+          "note": "The reporter provides runs with and without Relaxed and states that Relaxed fixes the vertex explosions; the comment does not pin a shadPS4 version."
+        }
+      ]
+    }
+  ]
+}
