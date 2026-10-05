@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA00093",
+  "title": "DRIVECLUB",
+  "last_reviewed": "2026-10-05",
+  "claims": [
+    {
+      "scope": "reach_ingame",
+      "mode": "precise",
+      "finding": "required",
+      "confidence": "high",
+      "shadps4_version": "0.17.0",
+      "game_version": "1.28",
+      "comparison": {
+        "disabled": "fails",
+        "relaxed": "fails",
+        "precise": "works"
+      },
+      "co_requirements": [],
+      "summary": "Stock and Relaxed crash before gameplay; Precise reaches gameplay.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/1006#issuecomment-5234025452",
+          "note": "The reporter explicitly states that Precise is needed to go in game on 0.17.0 and that Relaxed crashes at the same point as stock."
+        }
+      ]
+    },
+    {
+      "scope": "daytime_rendering",
+      "mode": "precise",
+      "finding": "required",
+      "confidence": "high",
+      "shadps4_version": null,
+      "game_version": "1.28",
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "incorrect",
+        "precise": "works"
+      },
+      "co_requirements": [],
+      "summary": "Daytime races require Precise to look right; Relaxed flickers and Disabled is too dark.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/1536#issuecomment-4173849737",
+          "note": "The comment explicitly compares all three modes but does not state the shadPS4 version."
+        }
+      ]
+    }
+  ]
+}
