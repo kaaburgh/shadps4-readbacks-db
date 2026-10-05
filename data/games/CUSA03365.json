@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA03365",
+  "title": "DARK SOULS III",
+  "last_reviewed": "2026-10-05",
+  "claims": [
+    {
+      "scope": "vertex_integrity",
+      "mode": "relaxed",
+      "finding": "required",
+      "confidence": "high",
+      "shadps4_version": null,
+      "game_version": "01.15",
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "works",
+        "precise": "works"
+      },
+      "co_requirements": [],
+      "summary": "Minor vertex explosions after extended play are fixed by enabling at least Relaxed readbacks.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/1651#issuecomment-5958992935",
+          "note": "The reporter says the vertex explosions are fixed only by enabling at least Relaxed; the comment does not state an emulator version."
+        }
+      ]
+    }
+  ]
+}
