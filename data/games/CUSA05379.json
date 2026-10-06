@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA05379",
+  "title": "Call of Duty: Modern Warfare Remastered",
+  "last_reviewed": "2026-10-06",
+  "claims": [
+    {
+      "scope": "lighting_rendering",
+      "mode": "precise",
+      "finding": "beneficial",
+      "confidence": "medium",
+      "shadps4_version": "0.18.0",
+      "game_version": null,
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "not_reported",
+        "precise": "improves"
+      },
+      "co_requirements": [],
+      "summary": "Precise slightly improves lighting, but not to a significant degree; major graphical glitches remain.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/2475#issuecomment-5560028933",
+          "note": "The 0.18.0 report explicitly says Precise slightly improved lighting, but the reporter did not save a log or screenshots from the Precise run."
+        }
+      ]
+    }
+  ]
+}
