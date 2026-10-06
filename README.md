@@ -35,6 +35,12 @@ A record is scoped to a concrete observed behavior, for example `reach_ingame`, 
 
 Do not promote "Precise works" into "Precise required" without evidence about Relaxed.
 
+`confidence` describes how directly the cited evidence supports the scoped claim, not the reputation of the reporter:
+
+- **high** — explicit mode comparison or an unambiguous statement of requirement/effect for this scope.
+- **medium** — the effect is clear, but some comparison, version context, or baseline is missing or hedged.
+- **low** — indirect or materially ambiguous evidence retained as a lead rather than a firm conclusion.
+
 Each claim records the shadPS4 version when the source states it. `null` means the source does not pin the version; it must not be silently inferred from issue dates or milestones.
 
 Other experimental requirements belong in `co_requirements`. A result that needs Direct Memory Access or Readback Linear Images should not be represented as a readbacks-only result.
@@ -42,14 +48,15 @@ Other experimental requirements belong in `co_requirements`. A result that needs
 ## Repository layout
 
 - `data/games/*.json` — canonical per-title records.
-- `schema/game.schema.json` — JSON Schema for editors and external tooling.
-- `tools/validate.py` — dependency-free semantic validation.
+- `schema/game.schema.json` — canonical JSON Schema enforced by validation.
+- `tools/validate.py` — schema plus semantic validation.
 - `tools/generate_summary.py` — regenerates `SUMMARY.md`.
 - `.github/workflows/validate.yml` — validates data and checks generated output.
 
 Validate locally:
 
 ~~~sh
+python3 -m pip install -r requirements-dev.txt
 python3 tools/validate.py
 python3 tools/generate_summary.py --check
 ~~~
