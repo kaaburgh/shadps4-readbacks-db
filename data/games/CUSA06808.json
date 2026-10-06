@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA06808",
+  "title": "Danganronpa 1.2 RELOAD",
+  "last_reviewed": "2026-10-06",
+  "claims": [
+    {
+      "scope": "gameplay_functionality",
+      "mode": "precise",
+      "finding": "required",
+      "confidence": "high",
+      "shadps4_version": null,
+      "game_version": "1.02",
+      "comparison": {
+        "disabled": "not_reported",
+        "relaxed": "not_reported",
+        "precise": "works"
+      },
+      "co_requirements": [],
+      "summary": "Precise is explicitly reported as necessary for the game to function properly.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/1530#issuecomment-4173680393",
+          "note": "The compatibility report states 'Needs precise readbacks to function properly'; it does not separately document Disabled or Relaxed in that comment."
+        }
+      ]
+    }
+  ]
+}
