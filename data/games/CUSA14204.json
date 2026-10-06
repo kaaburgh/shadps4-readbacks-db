@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA14204",
+  "title": "EA SPORTS UFC 4",
+  "last_reviewed": "2026-10-06",
+  "claims": [
+    {
+      "scope": "menu_rendering",
+      "mode": "precise",
+      "finding": "beneficial",
+      "confidence": "medium",
+      "shadps4_version": "0.18.0",
+      "game_version": "27.00",
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "not_reported",
+        "precise": "improves"
+      },
+      "co_requirements": [
+        "readback_linear_images",
+        "direct_memory_access"
+      ],
+      "summary": "Precise with Readback Linear Images and DMA renders more menu graphics, but vertex explosions persist and the game still crashes before gameplay.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/419#issuecomment-5563782890",
+          "note": "The 0.18.0 report compares stock with the Precise+RLI+DMA combination; improvement is limited to additional menu graphics."
+        }
+      ]
+    }
+  ]
+}

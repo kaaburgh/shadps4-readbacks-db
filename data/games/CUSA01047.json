@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA01047",
+  "title": "Ratchet & Clank",
+  "last_reviewed": "2026-10-06",
+  "claims": [
+    {
+      "scope": "reach_ingame",
+      "mode": "relaxed",
+      "finding": "required",
+      "confidence": "high",
+      "shadps4_version": "0.17.0",
+      "game_version": "1.00",
+      "comparison": {
+        "disabled": "fails",
+        "relaxed": "works",
+        "precise": "not_reported"
+      },
+      "co_requirements": [
+        "readback_linear_images"
+      ],
+      "summary": "On 0.17.0, Disabled hangs after starting a new game; Relaxed plus Readback Linear Images reaches gameplay.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/359#issuecomment-5137587719",
+          "note": "The report directly compares no readbacks with Relaxed+RLI on game version 1.00."
+        }
+      ]
+    }
+  ]
+}
