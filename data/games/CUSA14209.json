@@ -23,8 +23,13 @@
       "evidence": [
         {
           "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/116#issuecomment-4577477271",
+          "note": "The 0.15.0 baseline reaches gameplay with everything black except the HUD."
+        },
+        {
+          "kind": "compatibility_issue_comment",
           "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/116#issuecomment-5968497528",
-          "note": "The same reporter's 0.19.0 stock retest shows no improvement over the prior black-scene behavior."
+          "note": "A later 0.19.0 stock retest reports no change from the existing behavior."
         },
         {
           "kind": "compatibility_issue_comment",
