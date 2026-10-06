@@ -10,7 +10,7 @@
       "finding": "beneficial",
       "confidence": "high",
       "shadps4_version": "0.16.0",
-      "game_version": "01.00",
+      "game_version": null,
       "comparison": {
         "disabled": "incorrect",
         "relaxed": "not_reported",
@@ -22,7 +22,7 @@
         {
           "kind": "compatibility_issue_comment",
           "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/517#issuecomment-4951501598",
-          "note": "The 0.16.0 retest explicitly says Precise improves texture loading quite a bit while remaining far from optimal."
+          "note": "The 0.16.0 retest explicitly says Precise improves texture loading quite a bit while remaining far from optimal. The comment does not restate the game version, so the original issue header's 01.00 is not applied to this reporter's retest."
         }
       ]
     }
