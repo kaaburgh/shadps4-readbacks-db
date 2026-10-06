@@ -30,7 +30,7 @@
       "scope": "text_rendering",
       "mode": "precise",
       "finding": "beneficial",
-      "confidence": "high",
+      "confidence": "medium",
       "shadps4_version": "0.15.0",
       "game_version": "01.53",
       "comparison": {
