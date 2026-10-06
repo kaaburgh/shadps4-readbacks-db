@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA00462",
+  "title": "Far Cry 4",
+  "last_reviewed": "2026-10-06",
+  "claims": [
+    {
+      "scope": "reach_ingame",
+      "mode": "precise",
+      "finding": "sufficient",
+      "confidence": "medium",
+      "shadps4_version": null,
+      "game_version": "01.00",
+      "comparison": {
+        "disabled": "not_reported",
+        "relaxed": "not_reported",
+        "precise": "works"
+      },
+      "co_requirements": [],
+      "summary": "Precise is shown to reach gameplay on game version 01.00, but lower readback modes are not ruled out.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/117#issuecomment-4906285481",
+          "note": "The reporter says Precise reaches gameplay and notes the same was possible in their 0.15.0 testing, but the comment does not pin the version of the shown run or compare lower modes."
+        }
+      ]
+    }
+  ]
+}
