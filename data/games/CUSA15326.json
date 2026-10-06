@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA15326",
+  "title": "YAKUZA 4",
+  "last_reviewed": "2026-10-05",
+  "claims": [
+    {
+      "scope": "geometry_rendering",
+      "mode": "precise",
+      "finding": "sufficient",
+      "confidence": "medium",
+      "shadps4_version": "0.18.0",
+      "game_version": null,
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "not_reported",
+        "precise": "works"
+      },
+      "co_requirements": [],
+      "summary": "Precise restores world geometry on 0.18.0, but the cited report does not establish whether Relaxed is insufficient.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/2000#issuecomment-5805084782",
+          "note": "The report compares the broken default rendering with Precise; Relaxed is not discussed."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA15327",
+  "title": "YAKUZA 5",
+  "last_reviewed": "2026-10-05",
+  "claims": [
+    {
+      "scope": "geometry_rendering",
+      "mode": "precise",
+      "finding": "sufficient",
+      "confidence": "medium",
+      "shadps4_version": "0.18.0",
+      "game_version": null,
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "not_reported",
+        "precise": "works"
+      },
+      "co_requirements": [],
+      "summary": "Precise restores mostly missing/black world geometry on 0.18.0, but Relaxed is not ruled out by this evidence.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/2001#issuecomment-5805186230",
+          "note": "The report shows default versus Precise but does not state a Relaxed result."
+        }
+      ]
+    }
+  ]
+}

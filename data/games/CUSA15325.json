@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA15325",
+  "title": "YAKUZA 3",
+  "last_reviewed": "2026-10-05",
+  "claims": [
+    {
+      "scope": "geometry_rendering",
+      "mode": "precise",
+      "finding": "required",
+      "confidence": "high",
+      "shadps4_version": "0.18.0",
+      "game_version": null,
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "incorrect",
+        "precise": "works"
+      },
+      "co_requirements": [],
+      "summary": "On 0.18.0 the world is a black abyss unless Precise readbacks are enabled.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/1999#issuecomment-5804804279",
+          "note": "The reporter explicitly states that the black-world failure remains unless Precise readbacks are on."
+        }
+      ]
+    }
+  ]
+}

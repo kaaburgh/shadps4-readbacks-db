@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA07994",
+  "title": "FIFA 18",
+  "last_reviewed": "2026-10-05",
+  "claims": [
+    {
+      "scope": "vertex_integrity",
+      "mode": "relaxed",
+      "finding": "required",
+      "confidence": "high",
+      "shadps4_version": null,
+      "game_version": null,
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "works",
+        "precise": "works"
+      },
+      "co_requirements": [],
+      "summary": "Character-creator vertex explosions occur with Disabled and are fixed by Relaxed; Precise also fixes them.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/1495#issuecomment-4173941327",
+          "note": "The report explicitly compares Disabled, Relaxed, and Precise for the vertex-explosion symptom."
+        }
+      ]
+    }
+  ]
+}

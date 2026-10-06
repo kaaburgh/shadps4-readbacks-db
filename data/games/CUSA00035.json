@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA00035",
+  "title": "The Order: 1886",
+  "last_reviewed": "2026-10-05",
+  "claims": [
+    {
+      "scope": "reach_menu",
+      "mode": "relaxed",
+      "finding": "required",
+      "confidence": "high",
+      "shadps4_version": "0.16.0",
+      "game_version": "1.02",
+      "comparison": {
+        "disabled": "fails",
+        "relaxed": "works",
+        "precise": "no_change"
+      },
+      "co_requirements": [],
+      "summary": "At least Relaxed is needed to reach the menus; Precise provided no noticeable benefit for this scope.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/232#issuecomment-4704232581",
+          "note": "The reporter explicitly compares stock, Relaxed, and Precise on shadPS4 0.16.0."
+        }
+      ]
+    }
+  ]
+}
