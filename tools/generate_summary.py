@@ -11,6 +11,14 @@ OUTPUT = ROOT / "SUMMARY.md"
 def esc(value):
     return str(value).replace("|", "\\|").replace("\n", " ")
 
+def evidence_links(evidence):
+    if len(evidence) == 1:
+        return f"[source]({evidence[0]['url']})"
+    return " ".join(
+        f"[{index}]({item['url']})"
+        for index, item in enumerate(evidence, start=1)
+    )
+
 def render():
     lines = [
         "# Readbacks evidence summary",
@@ -27,7 +35,6 @@ def render():
         for claim in record["claims"]:
             version = claim["shadps4_version"] or "—"
             finding = f"{claim['mode'].title()} {claim['finding'].replace('_', ' ')}"
-            evidence = claim["evidence"][0]["url"]
             lines.append(
                 "| " + " | ".join([
                     esc(record["title"]),
@@ -37,7 +44,7 @@ def render():
                     esc(finding),
                     esc(claim["confidence"]),
                     esc(claim["summary"]),
-                    f"[source]({evidence})",
+                    evidence_links(claim["evidence"]),
                 ]) + " |"
             )
     return "\n".join(lines) + "\n"
