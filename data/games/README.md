@@ -11,6 +11,12 @@ Important distinctions:
 - `beneficial`: the mode improves the behavior but does not fully fix it.
 - `no_benefit`: tested without an observable benefit for the scope.
 
+Confidence describes evidence support for the scoped claim, not reporter reputation:
+
+- `high`: direct comparison or unambiguous statement.
+- `medium`: useful evidence with a missing comparison/context detail or hedged wording.
+- `low`: indirect or materially ambiguous evidence.
+
 Comparison outcomes describe only what the cited evidence supports:
 
 - `not_tested`: the source explicitly establishes that this mode was not tested.
