@@ -10,7 +10,7 @@
       "finding": "beneficial",
       "confidence": "medium",
       "shadps4_version": "0.15.0",
-      "game_version": "01.02",
+      "game_version": null,
       "comparison": {
         "disabled": "incorrect",
         "relaxed": "not_reported",
@@ -25,7 +25,7 @@
         {
           "kind": "compatibility_issue_comment",
           "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/691#issuecomment-4093584661",
-          "note": "The 0.15 report attributes partial improvement to the combined Precise+RLI+DMA configuration, so the co-requirements are explicit and the claim is only beneficial/medium."
+          "note": "The 0.15 report attributes partial improvement to the combined Precise+RLI+DMA configuration. It does not state the game version; a later 0.19 report explicitly says the game was updated to 1.02."
         }
       ]
     }
