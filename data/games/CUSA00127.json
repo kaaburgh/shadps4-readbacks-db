@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "serial": "CUSA00127",
+  "title": "Netflix",
+  "last_reviewed": "2026-10-06",
+  "claims": [
+    {
+      "scope": "intro_cinematic_rendering",
+      "mode": "precise",
+      "finding": "sufficient",
+      "confidence": "high",
+      "shadps4_version": "0.15.0",
+      "game_version": "01.53",
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "not_reported",
+        "precise": "works"
+      },
+      "co_requirements": [],
+      "summary": "Precise fixes the reported visual corruption in the intro cinematic.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/2399#issuecomment-4741909881",
+          "note": "The report describes broken intro visuals and explicitly says Precise fixes the intro cinematic visual issues."
+        }
+      ]
+    },
+    {
+      "scope": "text_rendering",
+      "mode": "precise",
+      "finding": "beneficial",
+      "confidence": "high",
+      "shadps4_version": "0.15.0",
+      "game_version": "01.53",
+      "comparison": {
+        "disabled": "incorrect",
+        "relaxed": "not_reported",
+        "precise": "improves"
+      },
+      "co_requirements": [],
+      "summary": "Precise improves the otherwise heavily broken text rendering.",
+      "evidence": [
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/2399#issuecomment-4741909881",
+          "note": "The same report says Precise seems to help text rendering, without claiming that text becomes fully correct."
+        }
+      ]
+    }
+  ]
+}
