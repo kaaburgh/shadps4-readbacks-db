@@ -9,7 +9,7 @@
       "mode": "precise",
       "finding": "required",
       "confidence": "high",
-      "shadps4_version": null,
+      "shadps4_version": "0.15.0",
       "game_version": "1.02",
       "comparison": {
         "disabled": "not_reported",
@@ -23,6 +23,11 @@
           "kind": "compatibility_issue_comment",
           "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/1530#issuecomment-4173680393",
           "note": "The compatibility report states 'Needs precise readbacks to function properly'; it does not separately document Disabled or Relaxed in that comment."
+        },
+        {
+          "kind": "compatibility_issue_comment",
+          "url": "https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/1244#issuecomment-4077752819",
+          "note": "A parallel Windows report for the same CUSA and game version explicitly says that on shadPS4 0.15.0 the title requires Precise readbacks to function properly."
         }
       ]
     }
