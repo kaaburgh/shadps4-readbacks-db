@@ -12,7 +12,7 @@
       "shadps4_version": "0.19.0",
       "game_version": null,
       "comparison": {
-        "disabled": "incorrect",
+        "disabled": "not_reported",
         "relaxed": "works",
         "precise": "not_reported"
       },
